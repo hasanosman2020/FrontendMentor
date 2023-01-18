@@ -17,8 +17,7 @@ The challenge is to build out the QR code component, as shown in the challenge, 
 
 ### Screenshot
 
-![](./QR_code_by_Hasan_Osman.png)
-
+![](./QR_code_by_Hasan_Osman.png)<img width="284" alt="QR_code_by_Hasan_Osman" src="https://user-images.githubusercontent.com/7830170/213191489-aade6b23-4421-4d53-8206-fa8d77297a99.png">
 ### Links
 
 - Solution URL: https://github.com/hasanosman2020/FrontendMentor
