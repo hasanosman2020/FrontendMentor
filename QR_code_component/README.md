@@ -14,7 +14,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ## Overview
 
 The challenge is to build out the QR code component, as shown in the challenge, and to get it looking as close to the design as possible. The image below is a screenshot of my attempt at replicating the one shown on the challenge.
-
+My first attempt tackled the challenge and achieved the stated objective. I received sonme extremely helpful comments on Frontend Mentor after submitting my solution which made suggestions about making the code to be semantic html and more accessible. I have incorporated the relevant comments and resubmitted my solution which I believe is much better than the first submission.
 ### Screenshot
 
 ![](./image-qr-code.png)
