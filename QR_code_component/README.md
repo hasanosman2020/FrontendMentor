@@ -37,3 +37,12 @@ My first attempt tackled the challenge and achieved the stated objective. I rece
 - Website - [Hasan Osman](https://github.com/hasanosman2020)
 - Frontend Mentor - [@hasanosman2020](https://www.frontendmentor.io/profile/hasanosman2020)
 - Twitter - [@Hasan79Hoa](https://twitter.com/Hasan79Hoa)
+
+Acknowledgments
+
+[Melvin Aguilar](https://www.frontendmentor.io/profile/MelvinAguilar
+)
+
+[Hassia Issah](https://www.frontendmentor.io/profile/Hassiai
+)
+
