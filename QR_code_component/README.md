@@ -17,7 +17,7 @@ The challenge is to build out the QR code component, as shown in the challenge, 
 
 ### Screenshot
 
-![](./QR_code_by_Hasan_Osman.png)
+![](./image-qr-code.png)
 
 ### Links
 
