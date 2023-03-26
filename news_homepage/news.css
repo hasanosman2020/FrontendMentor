@@ -1,0 +1,141 @@
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 3rem auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    font: 'Inter-Variable';
+    
+}
+@font-face {
+    font-family: 'Inter-VariableFont_slnt, wght';
+    src: url('/fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo {
+    width: 75px;
+    height: 50px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;   
+}
+.navbar_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+main {
+    margin-top: 3rem;
+   max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(200px, 1fr)); 
+    grid-auto-rows: repeat(3, 1fr);
+    
+   
+}
+.main_image .image{
+    grid-area: 2 / 1 / 3 / 3;
+    border: 2px solid red;
+    
+    
+
+    
+}
+.main_section{
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;area: main_section;
+    display: sub-grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border: 2px solid red;
+}
+.aside {
+    grid-row: 2 / 4;
+    grid-column: 3 / -1;
+    
+    border: 10px solid purple;
+}
+.articles{
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-bwtween;
+}
+.article01{
+    grid-area: article01;
+}
+.article02{
+    grid-area: article02;
+}
+.article03{
+    grid-area: article03;
+}
+
+.main_article_title {
+    grid-area: main_article_title;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    
+
+}
+.aside {
+    background-color: black;
+    color: white;
+}
+.aside_title {
+    font-size: 2rem;
+    font-weight: 700;
+    /*margin-bottom: 1rem;*/
+    padding: 1.5rem;
+    
+}
+.aside_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+
+}
+.asides {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+aside01{
+    padding-bottom: 1.5rem;
+}
+.aside01 h3 {
+    padding-bottom: 1rem;
+}
+.aside02 h3 {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+.aside03 h3 {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
