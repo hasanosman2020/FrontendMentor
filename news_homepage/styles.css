@@ -31,7 +31,9 @@ a {
     padding: 2rem;
     border: 5px solid black;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 10vh repeat(4, 1fr);
+    grid-template-rows: 10vh 30vh 30vh repeat(2, 40vh);
+    align-content: space-around;
+    justify-content: space-between;
     grid-gap: 1rem;
 }
 .header{
@@ -59,7 +61,36 @@ a {
     width: 100%;
     font-size: 1rem;
 }
-
+.image{
+    grid-row: 2 / 3; 
+    grid-column: 1 / 3;
+     border: 3px solid blue;
+}
+.main_image {
+    width: max-content;
+    height: 100%;
+    display: inline-block;
+}
+.main_article {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+    display: flex;
+    border: 3px solid  green;
+}
+.aside {
+    grid-row: 2 / 4;
+    grid-column: 4 / -1;
+    background-color: black;
+    color: white;
+}
+    
+    /*width: 60vw;
+    height: auto;*/
+    /*display: inline-block;
+    margin-top: 0;
+    background-image: url(images/image-web-3-desktop.jpg);
+    background-size: cover;*/
+    
 
 
 
