@@ -83,6 +83,13 @@ a {
     background-color: black;
     color: white;
 }
+.articles {
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+
+}
     
     /*width: 60vw;
     height: auto;*/
