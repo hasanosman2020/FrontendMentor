@@ -40,10 +40,13 @@ html {
     }
     
     body {
-        width: 100vw;
-        height: 100vw;
+        margin: 0;
+        width: 100%;
+        height: 100%;
         font-family: 'Inter', -apple-system, sans-serif;
         background: var(--background-clr);
+        /*overflow-x: hidden;*/
+        
     }
 
     ul {
@@ -89,9 +92,10 @@ p {
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(177, 176, 195, 0.3);
+    background-color: rgba(154, 153, 161, 0.6);
     transform: translate(0);
     transition: var(--transition);
+    cursor: pointer;
 }
 .overlay_slide_right{
     transition: var(--transition);
@@ -132,6 +136,7 @@ body > *{
     grid-row: 1 / 2;
     grid-column: 1 / -1;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-content: space-evenly;
     margin: auto 0;
@@ -146,7 +151,7 @@ body > *{
     align-items: flex-end;
     width: var(--fs-750);
     height: var(--fs-750);
-    /*top: 3rem;*/
+    top: 3rem;
     right: 2rem;
     z-index: 20;
     display: inline;
@@ -154,20 +159,22 @@ body > *{
     transition: var(--transition);
     color: var(--asidebg-clr);
 }
+/*Middle bar*/
 .menu_btn_burger {
     width: var(--fs-700);
     height: 0.375rem;
     background: var(--asidebg-clr);
     transition: var(--transition);
 }
+/*Firat and third bars*/
 .menu_btn_burger::before,
 .menu_btn_burger::after {
 content: '';
 position: absolute;
 width: var(--fs-700);
-    height: 0.375rem;
-    background: var(--asidebg-clr);
-    transition: var(--transition);
+height: 0.375rem;
+background: var(--asidebg-clr);
+transition: var(--transition);
 }
 .menu_btn_burger::before{
     transform: translateY(-16px);
@@ -203,3 +210,151 @@ width: var(--fs-700);
 .change .menu_btn_burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
 }
+
+/* NAV */
+.nav {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: 3px solid red;
+    /*transform: translateX(100%);
+    overflow-x: hidden;*/
+}
+.nav_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 20%;
+}
+nav ul li {
+    height: 5%;
+    overflow: hidden;
+}
+nav ul li:hover{
+    color: var(--orange);
+    cursor: pointer;
+    transform: scale(1.5);
+}
+/*
+.nav_list {
+    position: relative;
+    top: 25%;
+    color: var(--asidebg-clr);
+    letter-spacing: 4px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: var(--fs-600);
+    font-weight: 500;
+    transition: var(--transition);
+    transform: translateX(100%);
+    background: white;
+    z-index: 50;
+    
+}*/
+
+/**Container for menu button**/
+.menu_btn_container {
+    /*display: none;*/
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid orange;
+}
+/*
+#menu_toggle {
+    display: none;
+}*/
+
+/*Making the navbar resposive*/
+@media (max-width: 700px){
+    .menu_btn_container {
+        display: flex;
+    }
+    .nav_list {
+        position: absolute;
+        top: 0;
+        margin-top: 0;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: start;
+        align-items: flex-start;
+    }
+    #menu_toggle ~ .nav_list li {
+        height: 0;
+        margin: 0;
+        padding: 0-;
+        border: 0;
+    }
+    #menu_toggle:checked ~ .nav_list li {
+        border: 2px solid red;
+        height: 2.5rem;
+        padding: 0.5rem;
+    }
+    #menu_toggle:checked ~ .nav_list li a {
+        color: var(--asidebg-clr);
+        transform: translateX(0);
+    }
+    #menu_toggle:checked ~ .nav_list li a:hover{
+        color: var(--orange);
+        cursor: pointer;
+        transform: scale(1.5);
+    }
+    .nav_list li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        color: black;
+        background-color: var(--yellow);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/*
+.nav_active{
+    transform: translateX(0%);
+}
+nav ul li a:hover{
+    transform: scale(1.5);
+}
+/*
+.nav_slide_in{
+    animation: slide-in 0.4s linear;
+}
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    } to {
+        transform: translateX(0%);
+    }
+}
+.nav_slide_out {
+    animation: slide-out 0.4s linear;
+}
+@keyframes slide-out {
+    from {
+        transform: translateX(0%);
+    } to {
+        transform: translateX(-100%);
+    }
+}*/

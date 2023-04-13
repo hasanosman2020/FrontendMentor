@@ -15,11 +15,11 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
-    
+    <div class="container">
   <!--Overlay-->
   <div class="overlay overlay_slide_left" id="overlay"></div>
 
-  <div class="container">
+ 
 
 <!--Header-->
     <header class="header">
@@ -28,10 +28,15 @@
             <img src="images/logo.svg" alt="logo" class="logo">
         </div>
 
+
+        <!--checkbox to control the icon's state-->
+            <input id="menu_toggle" type="checkbox" />
+            <label class="menu_btn_container" for="menu_toggle">
         <!--Menu Button-->
         <div class="menu_btn">
         <div class="menu_btn_burger"></div>
-        </div> 
+        </div>
+        </label> 
 
         <!--Navigation-->
         <nav class="nav" id="nav">
