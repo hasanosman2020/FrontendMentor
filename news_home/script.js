@@ -1,29 +1,19 @@
-const menuButton = document.querySelector('.menu_btn')
-const overlay = document.querySelector('.overlay')
-const navList = document.querySelector('.nav_list')
-const nav = document.querySelector('.nav')
+document
+  .querySelector('a.menu_icon')
+  .addEventListener('click', function (event) {
+    document.getElementById('nav_links').style.width = '250px'
+    /* document.getElementById('main').style.marginLeft = '250px'*/
+  })
 
-function toggleMenu () {
-  menuButton.classList.toggle('change')
+document
+  .querySelector('a.close_btn')
+  .addEventListener('click', function (event) {
+    document.getElementById('nav_links').style.width = '0'
+    document.getElementById('overlay').style.marginLeft = '0'
+  })
 
-  overlay.classList.toggle('overlay_active')
-  if (overlay.classList.contains('overlay_active')) {
-    overlay.classList.replace('overlay_slide_left', 'overlay_slide_right')
-    /* navList.classList.replace('nav_slide_in', 'nav_slide_out')*/
-  } else {
-    overlay.classList.replace('overlay_slide_right', 'overlay_slide_left')
-    /*navList.classList.replace('nav_slide_out', 'nav_slide_in')*/
-  }
-}
-/*
-const navSlide = () => {
-  /*const burger = document.querrySelector('.menu_btn');
-    const nav = document.querySelector('.nav_list');*/
-
-/*menuButton.addEventListener('click', () => {
-    nav.classList.add('nav_active')
-  })*/
-
-menuButton.addEventListener('click', toggleMenu)
-/*menuButton.addEventListener('click', navSlide)*/
-overlay.addEventListener('click', toggleMenu)
+document
+  .querySelector('a.menu_icon')
+  .addEventListener('click', function (event) {
+    document.getElementById('overlay').style.marginLeft = '100%'
+  })
