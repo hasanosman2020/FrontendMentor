@@ -30,6 +30,7 @@
     --fs-700: 3.5rem;
     --fs-600: 2rem;
     --fs-500: 1.75rem;
+    --fs-450: 1.5rem;
     --fs-400: 1.125rem;
     --fs-300: 1rem;
     --fs-200: 0.875rem;
@@ -647,7 +648,21 @@ nav ul li:hover{
     transform: translateX(-100vw);
 }
 .image {
-    max-width: 80%;
+    grid-area: 'image';
+    display: flex;
+    flex: 1;
+    /*grid-row: 2 / 3;*/
+    /*grid-column: 1 / -1;*/
+    width: 80%;
+    max-width: 600px;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    height: auto;
+    object-fit: cover;
+    margin: 2.5rem auto;
+    /*margin-top: 2rem;*/
+}
+.banner_image {
+    width: 100%;
 }
 h1.article_title {
     grid-area: 'article_title';
@@ -655,7 +670,7 @@ h1.article_title {
     flex-direction: row;
     text-align: left;
     margin-right: 2rem;
-    font-size: var(--fs-750);
+    font-size: var(--fs-700);
 }
 .main_article {
     display: flex;
@@ -663,7 +678,7 @@ h1.article_title {
     margin: 3rem;
 }
 p.info {
-    font-size: var(--fs-500);
+    font-size: var(--fs-450);
     text-align: justify;
 }
 .btn{
@@ -694,8 +709,10 @@ z-index: 6;
 .aside {
     grid-area: 'aside';
     /*grid-row: 5 / 6;*/
-    margin: 3rem auto;
+    margin: 0 auto;
+    margin-bottom: 3rem;
     margin-left: 0;
+    
    /*grid-auto-rows: minmax(150px, 1fr); /*2 / 4*/
     display: grid;
     background-color: var(--asidebg-clr);
@@ -705,10 +722,12 @@ z-index: 6;
     grid-template-columns: auto-fit;
     grid-template-rows: auto-fit;
    /* align-items: flex-start;*/
-    width: -moz-fit-content;
-    width: 100%;
-    height: fit-content;
+    /*width: -moz-fit-content;*/
+    width: 80%;
+   /* height: fit-content;*/
     object-fit: cover;
+    
+    
 }
 .aside_content {
     display: grid;
@@ -718,10 +737,9 @@ z-index: 6;
     height: 100%;
     margin: 0 auto;
     font-size: 1.5rem;
-    margin: 3.5rem;
 }
 .aside_title_new {
-    font-size: var(--fs-600);
+    font-size: 1.5rem;
     font-weight: 500;
     color: #F1A133;
     margin-top: 1rem;
@@ -732,16 +750,16 @@ hr {
     width: 80%;
     margin: 0 auto;
 }
+
 .aside_item p {
     color: #8E8E9B;
     font-size: var(--fs-400);
     text-align: left;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     
    justify-content: start;
     align-items: start;
-    margin: 3.5rem;
-    /*margin-left: 3rem;
+    margin-left: 1.5rem;
     margin-right: 1.5rem;
     margin-bottom: 3rem;
     /*width: -moz-fit-content;
@@ -755,7 +773,89 @@ hr {
     margin-top: 3rem;
    
 }
+.articles {
+    grid-area: 'articles';
+    /*grid-row: 6 / 7;*/
+    /*grid-column: 2 / 3;*/
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 100%;
+    /*font-size: var(--fs-500);*/
 }
+.article {
+    /*grid-area: 'articles';
+    grid-row: 6 / 7;
+/*grid-column: 1 / 2;*/
+display: flex;
+flex-direction: row;
+/*flex-direction: row;*/
+/*width: minmax(1fr, 80%);
+max-width: min-content;*/
+font-size: 2.75rem;
+font-weight: 300;
+
+}
+.article_image {
+    display: flex;
+    width: 20%;
+    /*height: 10%;*/
+    margin-bottom: 1rem;
+    
+}
+.retro,
+.laptop,
+.console {
+    width: 100%;
+}
+.article_content {
+    display: flex;
+    /*grid-column: 2 / 3;*/
+    grid-gap: 0;
+    flex-direction: column;
+    flex-basis: 100%;
+
+    /*padding-right: 2em;*/
+    /*text-align: justify;*/
+    
+    font-size: 1.75rem;
+    font-weight: 200;
+    margin-left: 1rem;
+    
+}
+.article_number{
+    font-size: var(--fs-600);
+    font-weight: 300;
+}
+.article_title{
+    font-size: var(--fs-400);
+    font-weight: 700;
+    
+}
+.article p{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-basis: 100%;  
+    flex-wrap: nowrap;                                        
+    font-size: var(--fs-400);
+    font-weight: 200;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+.attribution {
+    grid-area: 'attribution';
+    font-size: 11px;  
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+}
+
 
 
 @media screen and (min-width: 860px){
