@@ -93,6 +93,9 @@ h4 {
     white-space: nowrap;
     font-size: var(--fs-600);
 }
+.nav_links a:hover {
+    color: var(--orange);
+}
 .container{
     margin: 1rem auto;
     display: grid;
@@ -291,7 +294,7 @@ hr {
     font-weight: 300;
 }
 .article_title{
-    font-size: var(--fs-400);
+    font-size: var(--fs-300);
     font-weight: 700;
     color: var(--asidebg-clr);
 }
@@ -365,6 +368,9 @@ hr {
     right: 0;
     padding-top: 4rem;
     transition: var(--transition); 
+}
+.nav_links a:hover {
+    color: var(--orange);
 }
 .close_btn {
     position: absolute;
@@ -526,7 +532,7 @@ margin-right: 0;
     grid-gap: 0;
     flex-direction: column;
     flex-basis: 100%;
-    font-size: 1.75rem;
+    font-size: var(--fs-300);
     font-weight: 500;
     margin-left: 1rem;
 }
@@ -538,12 +544,12 @@ margin-right: 0;
     font-size: var(--fs-400);
     font-weight: 700;
     color: var(--asidebg-clr);
+    max-width: 60%;
 }
 .article p{
     display: flex;
     flex-direction: column;
-    max-width: 100%;                                    
-    font-size: var(--fs-450);
+    max-width: 100%;                              font-size: var(--fs-450);
     font-weight: 400;
     margin-left: 0;
     margin-top: 0;
@@ -580,6 +586,9 @@ margin-right: 0;
     .nav_links a {
         font-size: var(--fs-450);
     }
+    .nav_links a:hover {
+    color: var(--orange);
+}
     .close_btn {
     display: none;
 }
@@ -657,10 +666,16 @@ p.info {
     
     margin-bottom: 1rem;
 }
+.article p {
+    font-size: var(--fs-300);
+    max-width: 80%;
+}
 .retro,
 .laptop,
 .console {
     max-width: 100%;
+    
+}
 }
 
 

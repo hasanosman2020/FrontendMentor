@@ -24,8 +24,6 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 - [Author](#author)
 
-- [Acknowledgments](#acknowledgments)
-
 ## Overview ##
 
 ### The challenge ###
