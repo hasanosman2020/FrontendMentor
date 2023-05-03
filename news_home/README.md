@@ -1,20 +1,14 @@
-a# Frontend Mentor - News homepage solution
+# Frontend Mentor - News homepage solution #
 
-  
+This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
-  
-
-## Table of contents
-
-  
+## Table of contents ##
 
 - [Overview](#overview)
 
   - [The challenge](#the-challenge)
 
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
 
   - [Links](#links)
 
@@ -32,70 +26,43 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 - [Acknowledgments](#acknowledgments)
 
+## Overview ##
 
-## Overview
-
-  
-### The challenge###
+### The challenge ###
 
 Users should be able to:
+
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page.
 
 Please see the section below for screenshots of:
+
 - mobile view
 - mobile slide-out menu view
 - tablet view
-- tablet slide-out menu view
 - desktop view.
 
-  
+### Screenshots ###
 
-### Screenshot
+![mobile view](images/screenshots/mobileview.png)
 
-  
+![mobile menu view](images/screenshots/mobileslideoutmenuview.png)
 
-![](./screenshot.jpg)
+![tablet view](images/screenshots/tabletview.png)
 
-  
+![desktop view](/images/screenshots/desktopview.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-  
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-  
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-  
-
-****Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.****
-
-  
-
-### Links
-
-  
+### Links ###
 
 - Solution URL: [github.com/hasanosman2020/FrontendMentor](https://github.com/hasanosman2020/FrontendMentor)
 
 - Live Site URL: [frontendmentor-news-homepage.netlify.app](https://frontendmentor-news-homepage.netlify.app)
-- 
 
-  
+### My process ###
 
-## My process
-
-  
-
-### Built with
-
-  
+### Built with ###
 
 - Semantic HTML5 markup
-
 - CSS custom properties
 
 - Flexbox
@@ -106,69 +73,27 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Vanilla JavaScript
 
+### What I learned ###
 
-  
+I found this to be challenging. It took me longer than expected and I ended up rewriting the code on two separate occasions. It was a very steep learning curve but managed to incorporate using Flex, CSS Grid and plain, vanilla JavaScript in my app. I am aware that my CSS is probably far too long and can be cut down in a major way - any suggestions on that, or on any other apsects of the code, will be greatly appreciated.  I have created a tablet view as I thought it would be a good learning opportunity.
 
-### What I learned
+### Continued development ###
 
-I found this to be challenging. It took me longer than expected and I ended up rewriting the code on two separate occasions. It was a very steep learning curve but managed to incorporate using Flex, CSS Grid and plain, vanilla JavaScript in my app. I am aware that my CSS is probably far too long and can be cut down in a major way - any suggestions on that, or on any other apsects of the code, will be greatly appreciated. 
+I shall continue focusing on Flexbox, CSS Grid and JavaScript. Further practice with Flexbox is required in order for me to better understand some of the concepts involved and how to implement them. I would also like to learn more about CSS Grid and how to use it effectively. I would like to learn more about JavaScript and how to use it to create more interactive web pages.  
 
+### Useful resources ###
 
-  
+- [MDN - Basic Concepts of F    lexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#alignment_justification_and_distribution_of_free_space_between_items) - This helped me understand some of the basic concepts of CSS Flexbox. I'd recommend it to anyone learning the concepts of CSS Flexbox.
 
+- [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) - This helped me to understand and implement the concepts of CSS Grid.
+- [W3 Schools](https://www.w3schools.com/)
+- [Tuts Plus](https://tutsplus.com/)
+- This is a great resource which helped me with the JavaScript code for the mobile slide-out menu. It is an excellent website in general with very helpful tutorials and articles.  
 
+## Author ##
 
+- Website / Github - [Hasan Osman](https://github.com/hasanosman2020)
 
-  
+- Frontend Mentor - [@hasanosman2020](https://www.frontendmentor.io/profile/hasanosman2020)
 
-### Continued development
-
-  
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-  
-
-****Note: Delete this note and the content within this section and replace with your own plans for continued development.****
-
-  
-
-### Useful resources
-
-  
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-  
-
-****Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.****
-
-  
-
-## Author
-
-  
-
-- Website - [Add your name here](https://www.your-site.com)
-
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-  
-
-****Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.****
-
-  
-
-## Acknowledgments
-
-  
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-  
-
-****Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.****
+- Twitter - [@Hasan79Hoa](https://www.twitter.com/Hasan79Hoa)
