@@ -48,7 +48,7 @@ Please see the section below for screenshots of:
 
 ![tablet view](images/screenshots/tabletview.png)
 
-![desktop view](/images/screenshots/desktopview.png)
+![desktop view](images/screenshots/desktopview.png)
 
 ### Links ###
 
